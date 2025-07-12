@@ -20,12 +20,15 @@ matching/
 │   └── coordenadas/                         # Coordenadas originales
 ├── scripts/
 │   ├── visualizar_coordenadas.py           # Script original
-│   ├── visualizar_coordenadas_299x299.py   # Script mejorado (NUEVO)
-│   ├── organizar_imagenes_por_categoria.py # Organizador automático (NUEVO)
+│   ├── visualizar_coordenadas_299x299.py   # Script mejorado 
+│   ├── organizar_imagenes_por_categoria.py # Organizador automático
+│   ├── analizar_estadisticas_coordenadas.py # Análisis estadístico (NUEVO)
+│   ├── analizar_landmarks_heatmaps.py      # Generación de heatmaps (NUEVO)
+│   ├── generar_bounding_boxes_landmarks.py # Sistema bounding boxes (NUEVO)
 │   ├── procesar_coordenadas.py
 │   └── escalar_coordenadas.py
 ├── visualizations/
-│   └── coordenadas_299x299_overlays/       # Imágenes procesadas
+│   └── coordenadas_299x299_overlays/       # Imágenes procesadas básicas
 │       ├── entrenamiento/                  # 640 imágenes
 │       │   ├── covid/        (164 imágenes)
 │       │   ├── normal/       (328 imágenes)
@@ -36,6 +39,18 @@ matching/
 │       │   └── viral-pneumonia/ (48 imágenes)
 │       ├── grid_comparacion.png
 │       └── reportes*.json
+├── heatmaps_landmarks/                      # Sistema de análisis de heatmaps (NUEVO)
+│   ├── individuales/                       # Heatmaps por landmark (45 imágenes)
+│   ├── por_categoria/                      # Heatmaps por categoría médica (45 imágenes)
+│   ├── comparativos/                       # Grids comparativos por dataset (3 grids)
+│   ├── datos/matrices_densidad/            # Matrices NumPy de densidad (60 archivos)
+│   └── estadisticas/                       # Estadísticas y resúmenes CSV/JSON
+├── bounding_boxes_landmarks/                # Sistema de detección ROI científico (NUEVO)
+│   ├── individuales/                       # Visualizaciones científicas (15 PNG + 15 JSON)
+│   ├── comparativos/                       # Grid científico comparativo
+│   ├── estadisticas/                       # Métricas y análisis estadísticos
+│   ├── datos/roi_masks/                    # Máscaras de ROI (futuro)
+│   └── por_categoria/                      # Análisis por categoría médica (futuro)
 └── CLAUDE.md                              # Este archivo
 ```
 
@@ -233,7 +248,258 @@ echo "Total: $(find visualizations/coordenadas_299x299_overlays -name "*.png" | 
 - Organización por categorías médicas para análisis
 - Reportes automáticos para trazabilidad
 
+## 🔬 Sistema de Análisis Avanzado de Landmarks
+
+### Análisis de Bounding Boxes para Landmarks Anatómicos
+**Script Principal**: `scripts/generar_bounding_boxes_landmarks.py`
+
+Sistema avanzado para detección y análisis de regiones de interés (ROI) basado en coordenadas de landmarks anatómicos en radiografías médicas. Incluye múltiples algoritmos de detección con análisis científico de calidad para publicación.
+
+#### Métodos de Detección Implementados
+1. **MinMax Method** ⭐ (Método Recomendado)
+   - **Cobertura**: 100% garantizada de todas las coordenadas
+   - **Algoritmo**: Límites absolutos con margen de seguridad
+   - **Uso**: Análisis científico donde no se puede perder información
+
+2. **Percentile Method**
+   - **Cobertura**: ~95% de coordenadas (filtrado de outliers)
+   - **Algoritmo**: Percentiles 5-95 con margen adaptativo
+   - **Uso**: Análisis estadístico robusto contra anomalías
+
+3. **Statistical Method**
+   - **Cobertura**: ~90% de coordenadas
+   - **Algoritmo**: Media ± 2 desviaciones estándar
+   - **Uso**: Análisis estadístico clásico
+
+4. **Contours Method**
+   - **Cobertura**: Variable según densidad
+   - **Algoritmo**: Detección de contornos por densidad
+   - **Uso**: Análisis morfológico de distribuciones
+
+5. **Hybrid Method**
+   - **Cobertura**: Variable (combinación adaptativa)
+   - **Algoritmo**: Selección automática según distribución
+   - **Uso**: Análisis adaptativo automático
+
+#### Funcionalidades Principales
+- **Análisis Individual**: 15 landmarks por separado con métricas completas
+- **Análisis Comparativo**: Grid overview de todos los landmarks
+- **Exportación Científica**: PNG 300 DPI con metadatos completos
+- **Estadísticas Detalladas**: JSON con métricas ROI y distribución espacial
+- **Visualización Profesional**: Estilo científico con nomenclatura médica
+
+#### Estilo Científico Implementado
+- **Colormaps**: Plasma (perceptualmente uniforme)
+- **Fondo**: Negro para contraste óptimo
+- **Puntos**: Rojo/naranja alternados para visibilidad
+- **Tipografía**: Sans-serif profesional
+- **Títulos**: Nomenclatura científica estandarizada
+- **Métricas**: Tablas organizadas con valores precisos
+
+### Uso del Sistema de Bounding Boxes
+
+```bash
+# Análisis completo de todos los landmarks (método recomendado)
+python scripts/generar_bounding_boxes_landmarks.py --metodos minmax --datasets entrenamiento prueba
+
+# Análisis específico de landmarks individuales
+python scripts/generar_bounding_boxes_landmarks.py --metodos minmax --landmarks 1 4 8 --datasets entrenamiento
+
+# Comparación de métodos (análisis metodológico)
+python scripts/generar_bounding_boxes_landmarks.py --metodos minmax percentile statistical --datasets entrenamiento
+
+# Análisis rápido con visualización mínima
+python scripts/generar_bounding_boxes_landmarks.py --metodos minmax --sin-grid --limite 100
+```
+
+#### Archivos de Salida del Sistema
+```
+bounding_boxes_landmarks/
+├── individuales/                           # Análisis por landmark
+│   ├── landmark_01_entrenamiento_minmax_bbox.png    # Visualización científica
+│   ├── landmark_01_entrenamiento_minmax_bbox_stats.json  # Métricas detalladas
+│   └── ...                               # (15 landmarks × datasets × métodos)
+├── comparativos/                          # Análisis overview
+│   ├── grid_bboxes_entrenamiento_minmax_YYYYMMDD_HHMMSS.png
+│   └── grid_bboxes_prueba_minmax_YYYYMMDD_HHMMSS.png
+└── reportes/                             # Reportes consolidados
+    └── reporte_bboxes_YYYYMMDD_HHMMSS.json
+```
+
+#### Métricas Científicas Calculadas
+**ROI Metrics**:
+- Area (píxeles)
+- Coverage (% coordenadas incluidas)
+- Efficiency (relación área/contenido)
+- Density (coordenadas/píxel)
+
+**Spatial Stats**:
+- Centroid (X, Y)
+- Dimensions (ancho × alto)
+- Method validation
+- Point distribution analysis
+
+## 📊 Evolución y Decisiones Técnicas
+
+### Cronología del Desarrollo
+1. **Fase Inicial**: Visualización básica de coordenadas 299x299
+2. **Fase de Organización**: Categorización por datasets médicos
+3. **Fase de Análisis**: Implementación de heatmaps de densidad
+4. **Fase de Bounding Boxes**: Múltiples algoritmos de detección ROI
+5. **Fase Científica**: Elevación a estándares de publicación
+
+### Decisiones Técnicas Críticas
+
+#### 1. Selección del Método MinMax
+- **Problema**: Otros métodos perdían coordenadas importantes
+- **Solución**: MinMax garantiza 100% de cobertura
+- **Justificación**: En análisis médico no se puede perder información
+
+#### 2. Estilo Visual Científico
+- **Problema Inicial**: Visualizaciones básicas inadecuadas para publicación
+- **Evolución**: Colores → Heatmaps → Científico profesional
+- **Error Crítico**: Eliminación accidental de heatmaps (revertido)
+- **Solución Final**: Balance entre contexto (heatmap) y precisión (puntos)
+
+#### 3. Estructura de Datos
+- **Formato**: NumPy arrays para eficiencia computacional
+- **Resolución**: 299x299 píxeles (estándar para modelos médicos)
+- **Coordenadas**: 15 landmarks × N imágenes
+- **Validación**: Verificación de integridad en cada procesamiento
+
+#### 4. Organización de Archivos
+- **Principio**: Separación clara por propósito y método
+- **Timestamps**: Versionado automático para trazabilidad
+- **Metadatos**: JSON completos para reproducibilidad científica
+
+## ⚙️ Configuración Científica y Estándares
+
+### Parámetros de Calidad Científica
+```python
+# Configuración de exportación para publicación
+SCIENTIFIC_CONFIG = {
+    'dpi': 300,                    # Resolución para publicación
+    'format': 'png',               # Formato sin pérdida
+    'bbox_inches': 'tight',        # Recorte óptimo
+    'pad_inches': 0.1,             # Margen estándar
+    'facecolor': 'black',          # Fondo contrastante
+    'metadata': {                  # Metadatos completos
+        'Title': 'Landmark Analysis',
+        'Author': 'Medical AI System',
+        'Subject': 'ROI Detection',
+        'Creator': 'Python matplotlib'
+    }
+}
+```
+
+### Estándares de Nomenclatura
+- **Landmarks**: `L01-L15` (numeración médica estándar)
+- **Datasets**: `entrenamiento`, `prueba`, `maestro`
+- **Métodos**: `minmax`, `percentile`, `statistical`, `contours`, `hybrid`
+- **Archivos**: `landmark_XX_dataset_method_bbox.png`
+- **Timestamps**: `YYYYMMDD_HHMMSS` (ISO-compatible)
+
+### Colormaps Científicos
+- **Principal**: `plasma` (perceptualmente uniforme)
+- **Alternativa**: `viridis` (para daltonismo)
+- **Puntos**: Rojo (#FF0000) y Naranja (#FF8000) alternados
+- **Bounding Box**: Verde lima (#00FF00) con alpha 0.8
+
+## 📁 Estado Actual y Archivos Críticos
+
+### Archivos Más Importantes
+1. **`scripts/generar_bounding_boxes_landmarks.py`**
+   - Script principal del sistema de análisis
+   - Contiene todos los algoritmos de detección
+   - Función crítica: `detectar_bbox_minmax()`
+   - Última modificación: Estándares científicos implementados
+
+2. **`bounding_boxes_landmarks/individuales/landmark_*_minmax_*.png`**
+   - 30 visualizaciones científicas (15 landmarks × 2 datasets)
+   - Timestamp más reciente: `20250712_023513`
+   - Calidad de publicación científica
+
+3. **`bounding_boxes_landmarks/comparativos/grid_bboxes_*_minmax_*.png`**
+   - Análisis overview de todos los landmarks
+   - Visualización de distribución espacial completa
+   - Formato científico profesional
+
+4. **`data/coordenadas_299x299/`**
+   - Coordenadas fuente escaladas a 299x299
+   - 999 imágenes maestro, 640 entrenamiento, 160 prueba
+   - Base de datos principal del proyecto
+
+### Estado de Integridad
+- **Archivos procesados**: 800 imágenes (640 entrenamiento + 160 prueba)
+- **Landmarks analizados**: 15 landmarks completos
+- **Métodos validados**: MinMax con 100% cobertura
+- **Calidad**: Estándar científico para publicación
+- **Documentación**: Completa con metadatos JSON
+
+### Configuración de Entorno
+```bash
+# Dependencias principales
+pip install numpy matplotlib opencv-python pillow
+
+# Estructura de directorios validada
+mkdir -p bounding_boxes_landmarks/{individuales,comparativos,reportes}
+mkdir -p heatmaps_landmarks/{individuales,comparativos}
+mkdir -p visualizations/coordenadas_299x299_overlays/{entrenamiento,prueba}
+```
+
+## 🚀 Comandos de Uso y Workflows
+
+### Workflow Recomendado para Análisis Científico
+```bash
+# 1. Análisis completo con método óptimo
+python scripts/generar_bounding_boxes_landmarks.py --metodos minmax --datasets entrenamiento prueba
+
+# 2. Verificación de resultados
+find bounding_boxes_landmarks/individuales -name "*minmax_bbox.png" | wc -l  # Debe ser 30
+
+# 3. Análisis de métricas específicas
+python -c "
+import json
+with open('bounding_boxes_landmarks/individuales/landmark_01_entrenamiento_minmax_bbox_stats.json') as f:
+    stats = json.load(f)
+    print(f'Coverage: {stats[\"bbox\"][\"cobertura\"]}%')
+"
+
+# 4. Validación de integridad de datos
+python scripts/generar_bounding_boxes_landmarks.py --verificar-datos
+```
+
+### Comandos de Mantenimiento
+```bash
+# Limpiar archivos temporales
+find . -name "*.pyc" -delete
+find . -name "__pycache__" -type d -exec rm -rf {} +
+
+# Verificar estructura de proyecto
+ls -la bounding_boxes_landmarks/individuales/ | head -10
+ls -la bounding_boxes_landmarks/comparativos/
+
+# Estadísticas rápidas
+echo "Landmarks individuales: $(find bounding_boxes_landmarks/individuales -name "*bbox.png" | wc -l)"
+echo "Grids comparativos: $(find bounding_boxes_landmarks/comparativos -name "grid_*.png" | wc -l)"
+echo "Reportes JSON: $(find bounding_boxes_landmarks -name "*.json" | wc -l)"
+```
+
+### Comandos de Análisis Específico
+```bash
+# Análisis de landmark específico
+python scripts/generar_bounding_boxes_landmarks.py --metodos minmax --landmarks 1 --datasets entrenamiento --verbose
+
+# Comparación metodológica
+python scripts/generar_bounding_boxes_landmarks.py --metodos minmax percentile --datasets entrenamiento --comparar
+
+# Exportación para paper científico
+python scripts/generar_bounding_boxes_landmarks.py --metodos minmax --datasets entrenamiento --high-quality --metadatos-completos
+```
+
 ---
-**Última actualización**: Sesión de creación de scripts de visualización 299x299
-**Scripts creados**: visualizar_coordenadas_299x299.py, organizar_imagenes_por_categoria.py
-**Imágenes procesadas**: 800 (640 entrenamiento + 160 prueba)
+**Última actualización**: Sistema de análisis de landmarks implementado
+**Scripts críticos**: generar_bounding_boxes_landmarks.py (análisis científico)
+**Método recomendado**: MinMax (100% cobertura garantizada)
+**Calidad**: Estándar científico para publicación
+**Estado**: Sistema completo y documentado para análisis médico profesional
