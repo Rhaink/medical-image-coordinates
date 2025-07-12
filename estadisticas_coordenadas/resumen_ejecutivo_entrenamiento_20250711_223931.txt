@@ -1,0 +1,37 @@
+RESUMEN EJECUTIVO - ANÁLISIS DE COORDENADAS
+==================================================
+
+DATASET: entrenamiento
+Fecha de análisis: 2025-07-11T22:39:31.475978
+Total de registros: 640
+Total de coordenadas: 19200
+
+ESTADÍSTICAS GLOBALES:
+- Rango: 0.00 - 294.33
+- Media: 143.28
+- Mediana: 144.83
+- Desviación estándar: 75.62
+
+ESTADÍSTICAS POR EJE:
+Eje X - Rango: 0.00 - 294.33, Media: 149.39
+Eje Y - Rango: 0.00 - 294.33, Media: 137.17
+
+DISTRIBUCIÓN POR CATEGORÍA MÉDICA:
+Viral Pneumonia:
+  - Imágenes: 152
+  - Rango: 0.00 - 294.33
+  - Media: 145.88
+
+COVID:
+  - Imágenes: 160
+  - Rango: 0.00 - 294.33
+  - Media: 141.47
+
+Normal:
+  - Imágenes: 328
+  - Rango: 0.00 - 294.33
+  - Media: 142.95
+
+CALIDAD DE DATOS:
+- Coordenadas fuera de rango: 0 (0.00%)
+- Valores extremos: 0 (0.00%)

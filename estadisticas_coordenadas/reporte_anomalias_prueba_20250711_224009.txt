@@ -1,0 +1,7 @@
+REPORTE DE ANOMALÍAS EN COORDENADAS
+==================================================
+
+RESUMEN DE ANOMALÍAS:
+- Coordenadas fuera de rango (0-299): 0 (0.00%)
+- Valores extremos (outliers): 0 (0.00%)
+

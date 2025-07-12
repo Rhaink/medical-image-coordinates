@@ -1,0 +1,18 @@
+{
+  "dataset": "entrenamiento",
+  "timestamp": "20250712_001231",
+  "total_landmarks": 15,
+  "metodos_aplicados": [
+    "minmax"
+  ],
+  "estadisticas_por_metodo": {
+    "minmax": {
+      "area_promedio": 19354.2,
+      "area_std": 2642.210146287168,
+      "area_min": 14933,
+      "area_max": 24384,
+      "ratio_aspecto_promedio": 0.8608758194254743,
+      "cobertura_total": 324.731266988065
+    }
+  }
+}

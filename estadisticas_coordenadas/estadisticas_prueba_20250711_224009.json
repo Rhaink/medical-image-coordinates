@@ -1,0 +1,1720 @@
+{
+  "informacion_general": {
+    "dataset": "prueba",
+    "total_registros": 160,
+    "total_coordenadas": 4800,
+    "puntos_por_imagen": 15,
+    "fecha_analisis": "2025-07-11T22:40:09.103777",
+    "archivo_fuente": "/home/rhaink/projects/matching/data/coordenadas_299x299/coordenadas_prueba_299x299.csv"
+  },
+  "estadisticas_basicas": {
+    "total_puntos": 4800,
+    "min_global": 0.0,
+    "max_global": 294.33,
+    "media_global": 143.04597291666664,
+    "mediana_global": 144.83,
+    "desviacion_std_global": 75.78382845669275,
+    "percentiles": {
+      "p5": 28.03,
+      "p10": 37.38,
+      "p25": 79.42,
+      "p50": 144.83,
+      "p75": 205.56,
+      "p90": 252.28,
+      "p95": 261.62,
+      "p99": 280.31
+    },
+    "coordenadas_x": {
+      "min": 0.0,
+      "max": 294.33,
+      "media": 149.61087500000002,
+      "mediana": 149.5,
+      "desviacion_std": 77.4682494498082
+    },
+    "coordenadas_y": {
+      "min": 0.0,
+      "max": 294.33,
+      "media": 136.48107083333335,
+      "mediana": 135.48,
+      "desviacion_std": 73.4768790815291
+    }
+  },
+  "estadisticas_por_categoria": {
+    "COVID": {
+      "total_imagenes": 40,
+      "total_coordenadas": 1200,
+      "min": 0.0,
+      "max": 294.33,
+      "media": 141.21505,
+      "mediana": 144.83,
+      "desviacion_std": 74.13773441932814,
+      "coordenadas_x": {
+        "min": 0.0,
+        "max": 284.98,
+        "media": 149.49195,
+        "desviacion_std": 77.12838747199913
+      },
+      "coordenadas_y": {
+        "min": 0.0,
+        "max": 294.33,
+        "media": 132.93815000000004,
+        "desviacion_std": 70.05001804718421
+      }
+    },
+    "Normal": {
+      "total_imagenes": 72,
+      "total_coordenadas": 2160,
+      "min": 0.0,
+      "max": 294.33,
+      "media": 141.86706944444444,
+      "mediana": 144.83,
+      "desviacion_std": 74.4392999989153,
+      "coordenadas_x": {
+        "min": 0.0,
+        "max": 294.33,
+        "media": 151.09187037037037,
+        "desviacion_std": 77.69304768232729
+      },
+      "coordenadas_y": {
+        "min": 9.34,
+        "max": 294.33,
+        "media": 132.6422685185185,
+        "desviacion_std": 69.82846988329841
+      }
+    },
+    "Viral Pneumonia": {
+      "total_imagenes": 48,
+      "total_coordenadas": 1440,
+      "min": 0.0,
+      "max": 294.33,
+      "media": 146.34009722222223,
+      "mediana": 147.16500000000002,
+      "desviacion_std": 78.96886842727957,
+      "coordenadas_x": {
+        "min": 4.67,
+        "max": 284.98,
+        "media": 147.48848611111111,
+        "desviacion_std": 77.36270388431026
+      },
+      "coordenadas_y": {
+        "min": 0.0,
+        "max": 294.33,
+        "media": 145.19170833333334,
+        "desviacion_std": 80.52663419638415
+      }
+    }
+  },
+  "anomalias": {
+    "fuera_de_rango": [],
+    "valores_extremos": [],
+    "registros_problematicos": [],
+    "estadisticas_anomalias": {
+      "total_fuera_rango": 0,
+      "porcentaje_fuera_rango": 0.0,
+      "total_outliers": 0,
+      "porcentaje_outliers": 0.0
+    }
+  },
+  "resumen_por_imagen": [
+    {
+      "indice": 8,
+      "COVID_ID": "COVID-3519",
+      "categoria": "COVID",
+      "min_coord": 37.38,
+      "max_coord": 252.28,
+      "media_coord": 146.22899999999998,
+      "desviacion_std": 69.24317768319611,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 510,
+      "COVID_ID": "Normal-3173",
+      "categoria": "Normal",
+      "min_coord": 9.34,
+      "max_coord": 252.28,
+      "media_coord": 137.042,
+      "desviacion_std": 79.04760757079664,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 175,
+      "COVID_ID": "Viral Pneumonia-761",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 14.02,
+      "max_coord": 261.62,
+      "media_coord": 140.46733333333336,
+      "desviacion_std": 76.7931956158154,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 735,
+      "COVID_ID": "Viral Pneumonia-707",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 32.7,
+      "max_coord": 284.98,
+      "media_coord": 153.08133333333336,
+      "desviacion_std": 80.78108993790289,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 242,
+      "COVID_ID": "Viral Pneumonia-1327",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 266.3,
+      "media_coord": 143.42666666666668,
+      "desviacion_std": 77.68164400651904,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 764,
+      "COVID_ID": "Viral Pneumonia-993",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 14.02,
+      "max_coord": 266.3,
+      "media_coord": 148.25466666666665,
+      "desviacion_std": 79.83202806448605,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 540,
+      "COVID_ID": "Normal-4507",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 261.62,
+      "media_coord": 142.80266666666665,
+      "desviacion_std": 74.02292829177247,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 430,
+      "COVID_ID": "COVID-2072",
+      "categoria": "COVID",
+      "min_coord": 23.36,
+      "max_coord": 284.98,
+      "media_coord": 142.64800000000002,
+      "desviacion_std": 78.0603961643376,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 84,
+      "COVID_ID": "Normal-10078",
+      "categoria": "Normal",
+      "min_coord": 0.0,
+      "max_coord": 261.62,
+      "media_coord": 131.59066666666666,
+      "desviacion_std": 74.85689596081906,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 642,
+      "COVID_ID": "Normal-9298",
+      "categoria": "Normal",
+      "min_coord": 42.05,
+      "max_coord": 275.64,
+      "media_coord": 160.08833333333334,
+      "desviacion_std": 72.82701605326298,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 255,
+      "COVID_ID": "Viral Pneumonia-856",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 0.0,
+      "max_coord": 284.98,
+      "media_coord": 128.00900000000001,
+      "desviacion_std": 91.87951437797946,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 111,
+      "COVID_ID": "Normal-4484",
+      "categoria": "Normal",
+      "min_coord": 14.02,
+      "max_coord": 261.62,
+      "media_coord": 127.07499999999999,
+      "desviacion_std": 75.9690288099916,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 289,
+      "COVID_ID": "Viral Pneumonia-889",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 32.7,
+      "max_coord": 261.62,
+      "media_coord": 146.54,
+      "desviacion_std": 73.67594659498218,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 349,
+      "COVID_ID": "Normal-2007",
+      "categoria": "Normal",
+      "min_coord": 14.02,
+      "max_coord": 228.92,
+      "media_coord": 120.22233333333334,
+      "desviacion_std": 66.68248369116303,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 703,
+      "COVID_ID": "Viral Pneumonia-335",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 4.67,
+      "max_coord": 270.97,
+      "media_coord": 117.41966666666666,
+      "desviacion_std": 80.42122433302183,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 521,
+      "COVID_ID": "Normal-3691",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 256.95,
+      "media_coord": 133.61666666666667,
+      "desviacion_std": 72.10002641392643,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 437,
+      "COVID_ID": "COVID-2606",
+      "categoria": "COVID",
+      "min_coord": 32.7,
+      "max_coord": 261.62,
+      "media_coord": 136.72966666666667,
+      "desviacion_std": 67.66901637053368,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 565,
+      "COVID_ID": "Normal-5829",
+      "categoria": "Normal",
+      "min_coord": 37.38,
+      "max_coord": 252.28,
+      "media_coord": 140.46766666666664,
+      "desviacion_std": 70.11794124584347,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 224,
+      "COVID_ID": "Normal-3720",
+      "categoria": "Normal",
+      "min_coord": 51.39,
+      "max_coord": 256.95,
+      "media_coord": 155.41666666666663,
+      "desviacion_std": 67.06409652132966,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 371,
+      "COVID_ID": "COVID-642",
+      "categoria": "COVID",
+      "min_coord": 28.03,
+      "max_coord": 270.97,
+      "media_coord": 140.0,
+      "desviacion_std": 70.90888016790751,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 301,
+      "COVID_ID": "Normal-3805",
+      "categoria": "Normal",
+      "min_coord": 37.38,
+      "max_coord": 266.3,
+      "media_coord": 149.50066666666666,
+      "desviacion_std": 76.56664517196042,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 537,
+      "COVID_ID": "Normal-4448",
+      "categoria": "Normal",
+      "min_coord": 14.02,
+      "max_coord": 270.97,
+      "media_coord": 145.608,
+      "desviacion_std": 79.92343116591863,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 341,
+      "COVID_ID": "Normal-1891",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 228.92,
+      "media_coord": 118.97700000000002,
+      "desviacion_std": 65.36959324487188,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 135,
+      "COVID_ID": "Normal-8732",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 270.97,
+      "media_coord": 143.89433333333332,
+      "desviacion_std": 75.42195457041818,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 708,
+      "COVID_ID": "Viral Pneumonia-401",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 42.05,
+      "max_coord": 270.97,
+      "media_coord": 160.24533333333335,
+      "desviacion_std": 72.86788738227256,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 47,
+      "COVID_ID": "COVID-2358",
+      "categoria": "COVID",
+      "min_coord": 42.05,
+      "max_coord": 275.64,
+      "media_coord": 163.20466666666667,
+      "desviacion_std": 70.05645122486739,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 666,
+      "COVID_ID": "Normal-10105",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 252.28,
+      "media_coord": 131.28033333333335,
+      "desviacion_std": 72.84095063828374,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 60,
+      "COVID_ID": "COVID-2657",
+      "categoria": "COVID",
+      "min_coord": 18.69,
+      "max_coord": 256.95,
+      "media_coord": 141.871,
+      "desviacion_std": 75.8168754016325,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 741,
+      "COVID_ID": "Viral Pneumonia-745",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 4.67,
+      "max_coord": 294.33,
+      "media_coord": 152.14666666666665,
+      "desviacion_std": 92.9040163944607,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 117,
+      "COVID_ID": "Normal-6322",
+      "categoria": "Normal",
+      "min_coord": 32.7,
+      "max_coord": 252.28,
+      "media_coord": 146.853,
+      "desviacion_std": 67.083270947383,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 329,
+      "COVID_ID": "Normal-551",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 289.66,
+      "media_coord": 143.27033333333333,
+      "desviacion_std": 81.3877852212617,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 396,
+      "COVID_ID": "COVID-2536",
+      "categoria": "COVID",
+      "min_coord": 4.67,
+      "max_coord": 214.91,
+      "media_coord": 100.13400000000001,
+      "desviacion_std": 63.95141362002876,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 19,
+      "COVID_ID": "COVID-2169",
+      "categoria": "COVID",
+      "min_coord": 18.69,
+      "max_coord": 284.98,
+      "media_coord": 139.22133333333335,
+      "desviacion_std": 77.44930530066462,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 558,
+      "COVID_ID": "Normal-5329",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 261.62,
+      "media_coord": 136.57466666666667,
+      "desviacion_std": 67.73009246183626,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 81,
+      "COVID_ID": "Normal-2258",
+      "categoria": "Normal",
+      "min_coord": 32.7,
+      "max_coord": 275.64,
+      "media_coord": 140.9343333333333,
+      "desviacion_std": 75.62152412654892,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 73,
+      "COVID_ID": "COVID-2638",
+      "categoria": "COVID",
+      "min_coord": 51.39,
+      "max_coord": 252.28,
+      "media_coord": 145.9176666666667,
+      "desviacion_std": 64.54108793026519,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 641,
+      "COVID_ID": "Normal-9248",
+      "categoria": "Normal",
+      "min_coord": 42.05,
+      "max_coord": 233.59,
+      "media_coord": 133.77200000000002,
+      "desviacion_std": 55.743595291297815,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 676,
+      "COVID_ID": "Viral Pneumonia-95",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 37.38,
+      "max_coord": 252.28,
+      "media_coord": 143.42833333333334,
+      "desviacion_std": 71.344608256141,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 731,
+      "COVID_ID": "Viral Pneumonia-675",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 32.7,
+      "max_coord": 294.33,
+      "media_coord": 156.97466666666665,
+      "desviacion_std": 80.33895118945865,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 756,
+      "COVID_ID": "Viral Pneumonia-901",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 51.39,
+      "max_coord": 242.94,
+      "media_coord": 147.78699999999998,
+      "desviacion_std": 63.41391982575015,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 257,
+      "COVID_ID": "COVID-3090",
+      "categoria": "COVID",
+      "min_coord": 28.03,
+      "max_coord": 275.64,
+      "media_coord": 137.66466666666665,
+      "desviacion_std": 73.86606377912811,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 661,
+      "COVID_ID": "Normal-9934",
+      "categoria": "Normal",
+      "min_coord": 37.38,
+      "max_coord": 261.62,
+      "media_coord": 141.558,
+      "desviacion_std": 71.15011690784492,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 760,
+      "COVID_ID": "Viral Pneumonia-943",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 37.38,
+      "max_coord": 280.31,
+      "media_coord": 154.95100000000002,
+      "desviacion_std": 80.99068482856532,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 65,
+      "COVID_ID": "COVID-3321",
+      "categoria": "COVID",
+      "min_coord": 37.38,
+      "max_coord": 252.28,
+      "media_coord": 148.0993333333333,
+      "desviacion_std": 70.36944061799049,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 439,
+      "COVID_ID": "COVID-2829",
+      "categoria": "COVID",
+      "min_coord": 46.72,
+      "max_coord": 261.62,
+      "media_coord": 163.20266666666663,
+      "desviacion_std": 70.09738192606689,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 590,
+      "COVID_ID": "Normal-7192",
+      "categoria": "Normal",
+      "min_coord": 14.02,
+      "max_coord": 252.28,
+      "media_coord": 112.12500000000001,
+      "desviacion_std": 68.59850055455537,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 638,
+      "COVID_ID": "Normal-9174",
+      "categoria": "Normal",
+      "min_coord": 9.34,
+      "max_coord": 242.94,
+      "media_coord": 118.19833333333334,
+      "desviacion_std": 72.29771034103054,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 361,
+      "COVID_ID": "COVID-18",
+      "categoria": "COVID",
+      "min_coord": 42.05,
+      "max_coord": 270.97,
+      "media_coord": 155.57400000000004,
+      "desviacion_std": 70.49358678158839,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 643,
+      "COVID_ID": "Normal-9309",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 270.97,
+      "media_coord": 154.17133333333334,
+      "desviacion_std": 79.97755734093299,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 772,
+      "COVID_ID": "Viral Pneumonia-1100",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 37.38,
+      "max_coord": 242.94,
+      "media_coord": 140.46900000000002,
+      "desviacion_std": 66.80260735180926,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 436,
+      "COVID_ID": "COVID-2542",
+      "categoria": "COVID",
+      "min_coord": 18.69,
+      "max_coord": 242.94,
+      "media_coord": 140.157,
+      "desviacion_std": 74.34094067874041,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 538,
+      "COVID_ID": "Normal-4470",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 280.31,
+      "media_coord": 134.70533333333333,
+      "desviacion_std": 77.58681721071493,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 670,
+      "COVID_ID": "Viral Pneumonia-64",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 18.69,
+      "max_coord": 289.66,
+      "media_coord": 148.72133333333335,
+      "desviacion_std": 85.20231447299747,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 617,
+      "COVID_ID": "Normal-8317",
+      "categoria": "Normal",
+      "min_coord": 42.05,
+      "max_coord": 270.97,
+      "media_coord": 137.82,
+      "desviacion_std": 66.73544890086528,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 273,
+      "COVID_ID": "Normal-1588",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 256.95,
+      "media_coord": 135.32866666666666,
+      "desviacion_std": 75.65427252677509,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 382,
+      "COVID_ID": "COVID-1137",
+      "categoria": "COVID",
+      "min_coord": 14.02,
+      "max_coord": 270.97,
+      "media_coord": 147.00833333333333,
+      "desviacion_std": 69.96076801004658,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 294,
+      "COVID_ID": "COVID-3593",
+      "categoria": "COVID",
+      "min_coord": 14.02,
+      "max_coord": 284.98,
+      "media_coord": 130.656,
+      "desviacion_std": 80.29965515077468,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 194,
+      "COVID_ID": "Viral Pneumonia-80",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 18.69,
+      "max_coord": 280.31,
+      "media_coord": 153.23700000000002,
+      "desviacion_std": 85.14442624740623,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 725,
+      "COVID_ID": "Viral Pneumonia-623",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 289.66,
+      "media_coord": 157.5976666666667,
+      "desviacion_std": 78.46279312231725,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 85,
+      "COVID_ID": "Normal-395",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 294.33,
+      "media_coord": 161.64633333333333,
+      "desviacion_std": 84.47051207308316,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 493,
+      "COVID_ID": "Normal-2299",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 289.66,
+      "media_coord": 142.33599999999998,
+      "desviacion_std": 79.40973188050275,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 464,
+      "COVID_ID": "Normal-789",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 261.62,
+      "media_coord": 141.40200000000002,
+      "desviacion_std": 78.9710880597028,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 101,
+      "COVID_ID": "Normal-7635",
+      "categoria": "Normal",
+      "min_coord": 32.7,
+      "max_coord": 270.97,
+      "media_coord": 145.29466666666667,
+      "desviacion_std": 74.77267806417589,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 449,
+      "COVID_ID": "COVID-3492",
+      "categoria": "COVID",
+      "min_coord": 51.39,
+      "max_coord": 266.3,
+      "media_coord": 147.63033333333334,
+      "desviacion_std": 68.90112193006891,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 233,
+      "COVID_ID": "Normal-1088",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 266.3,
+      "media_coord": 141.55800000000002,
+      "desviacion_std": 70.23548800997969,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 262,
+      "COVID_ID": "Normal-4297",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 266.3,
+      "media_coord": 138.60000000000002,
+      "desviacion_std": 77.07181391403734,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 185,
+      "COVID_ID": "Viral Pneumonia-1057",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 32.7,
+      "max_coord": 266.3,
+      "media_coord": 148.41,
+      "desviacion_std": 77.9306300500644,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 202,
+      "COVID_ID": "Viral Pneumonia-1043",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 261.62,
+      "media_coord": 138.44333333333333,
+      "desviacion_std": 77.38542336182499,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 775,
+      "COVID_ID": "Viral Pneumonia-1144",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 37.38,
+      "max_coord": 256.95,
+      "media_coord": 145.91933333333336,
+      "desviacion_std": 70.4377184910345,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 689,
+      "COVID_ID": "Viral Pneumonia-220",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 0.0,
+      "max_coord": 280.31,
+      "media_coord": 135.63966666666667,
+      "desviacion_std": 84.01952124291645,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 148,
+      "COVID_ID": "Normal-8879",
+      "categoria": "Normal",
+      "min_coord": 32.7,
+      "max_coord": 270.97,
+      "media_coord": 143.42633333333333,
+      "desviacion_std": 76.1684595915892,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 522,
+      "COVID_ID": "Normal-3716",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 280.31,
+      "media_coord": 150.12233333333333,
+      "desviacion_std": 85.06365607329346,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 314,
+      "COVID_ID": "Normal-9419",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 247.61,
+      "media_coord": 123.33733333333336,
+      "desviacion_std": 62.232754287611456,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 443,
+      "COVID_ID": "COVID-3099",
+      "categoria": "COVID",
+      "min_coord": 28.03,
+      "max_coord": 280.31,
+      "media_coord": 135.48466666666667,
+      "desviacion_std": 74.30039007225257,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 779,
+      "COVID_ID": "Viral Pneumonia-1199",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 23.36,
+      "max_coord": 266.3,
+      "media_coord": 146.85266666666666,
+      "desviacion_std": 80.22961393954785,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 120,
+      "COVID_ID": "Normal-7573",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 242.94,
+      "media_coord": 120.84599999999999,
+      "desviacion_std": 62.39779881801387,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 667,
+      "COVID_ID": "Normal-10111",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 275.64,
+      "media_coord": 133.772,
+      "desviacion_std": 73.68647236320473,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 59,
+      "COVID_ID": "COVID-421",
+      "categoria": "COVID",
+      "min_coord": 9.34,
+      "max_coord": 294.33,
+      "media_coord": 155.26233333333337,
+      "desviacion_std": 80.79127278294908,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 370,
+      "COVID_ID": "COVID-605",
+      "categoria": "COVID",
+      "min_coord": 0.0,
+      "max_coord": 289.66,
+      "media_coord": 154.48333333333332,
+      "desviacion_std": 89.79925683929065,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 3,
+      "COVID_ID": "COVID-1387",
+      "categoria": "COVID",
+      "min_coord": 18.69,
+      "max_coord": 270.97,
+      "media_coord": 132.21433333333331,
+      "desviacion_std": 72.86818444668123,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 528,
+      "COVID_ID": "Normal-4120",
+      "categoria": "Normal",
+      "min_coord": 32.7,
+      "max_coord": 261.62,
+      "media_coord": 142.647,
+      "desviacion_std": 71.94935219305314,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 16,
+      "COVID_ID": "COVID-3380",
+      "categoria": "COVID",
+      "min_coord": 23.36,
+      "max_coord": 266.3,
+      "media_coord": 131.12333333333333,
+      "desviacion_std": 69.06313108711157,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 248,
+      "COVID_ID": "COVID-709",
+      "categoria": "COVID",
+      "min_coord": 28.03,
+      "max_coord": 247.61,
+      "media_coord": 137.66400000000002,
+      "desviacion_std": 62.711125413810485,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 408,
+      "COVID_ID": "COVID-334",
+      "categoria": "COVID",
+      "min_coord": 18.69,
+      "max_coord": 261.62,
+      "media_coord": 135.32833333333332,
+      "desviacion_std": 75.47020039209,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 355,
+      "COVID_ID": "Normal-2281",
+      "categoria": "Normal",
+      "min_coord": 42.05,
+      "max_coord": 266.3,
+      "media_coord": 146.07433333333336,
+      "desviacion_std": 66.30037645359857,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 692,
+      "COVID_ID": "Viral Pneumonia-232",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 23.36,
+      "max_coord": 270.97,
+      "media_coord": 149.50033333333337,
+      "desviacion_std": 76.93664746544539,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 481,
+      "COVID_ID": "Normal-1582",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 266.3,
+      "media_coord": 145.607,
+      "desviacion_std": 83.78203933023673,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 675,
+      "COVID_ID": "Viral Pneumonia-93",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 32.7,
+      "max_coord": 261.62,
+      "media_coord": 147.3193333333333,
+      "desviacion_std": 74.27959598406251,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 56,
+      "COVID_ID": "COVID-720",
+      "categoria": "COVID",
+      "min_coord": 0.0,
+      "max_coord": 280.31,
+      "media_coord": 127.23066666666665,
+      "desviacion_std": 85.38813398957856,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 778,
+      "COVID_ID": "Viral Pneumonia-1161",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 42.05,
+      "max_coord": 270.97,
+      "media_coord": 147.94233333333332,
+      "desviacion_std": 68.42046631836284,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 718,
+      "COVID_ID": "Viral Pneumonia-528",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 270.97,
+      "media_coord": 142.33666666666667,
+      "desviacion_std": 76.39390666509703,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 752,
+      "COVID_ID": "Viral Pneumonia-844",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 23.36,
+      "max_coord": 284.98,
+      "media_coord": 154.95066666666668,
+      "desviacion_std": 78.15725387249024,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 320,
+      "COVID_ID": "Normal-52",
+      "categoria": "Normal",
+      "min_coord": 51.39,
+      "max_coord": 280.31,
+      "media_coord": 153.85966666666667,
+      "desviacion_std": 62.99166942188114,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 784,
+      "COVID_ID": "Viral Pneumonia-1220",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 32.7,
+      "max_coord": 275.64,
+      "media_coord": 153.86066666666665,
+      "desviacion_std": 82.33505360955861,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 23,
+      "COVID_ID": "COVID-1560",
+      "categoria": "COVID",
+      "min_coord": 28.03,
+      "max_coord": 284.98,
+      "media_coord": 158.37600000000003,
+      "desviacion_std": 80.09107480862022,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 539,
+      "COVID_ID": "Normal-4498",
+      "categoria": "Normal",
+      "min_coord": 32.7,
+      "max_coord": 256.95,
+      "media_coord": 149.656,
+      "desviacion_std": 69.09013338145084,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 69,
+      "COVID_ID": "COVID-94",
+      "categoria": "COVID",
+      "min_coord": 32.7,
+      "max_coord": 284.98,
+      "media_coord": 160.71200000000002,
+      "desviacion_std": 80.57329414473094,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 187,
+      "COVID_ID": "Viral Pneumonia-207",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 261.62,
+      "media_coord": 136.57466666666667,
+      "desviacion_std": 71.81849593400173,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 556,
+      "COVID_ID": "Normal-5289",
+      "categoria": "Normal",
+      "min_coord": 32.7,
+      "max_coord": 261.62,
+      "media_coord": 147.94233333333332,
+      "desviacion_std": 77.77670545363966,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 656,
+      "COVID_ID": "Normal-9797",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 294.33,
+      "media_coord": 144.67366666666666,
+      "desviacion_std": 78.633908567205,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 218,
+      "COVID_ID": "Normal-647",
+      "categoria": "Normal",
+      "min_coord": 42.05,
+      "max_coord": 256.95,
+      "media_coord": 141.55800000000002,
+      "desviacion_std": 69.11671570129278,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 518,
+      "COVID_ID": "Normal-3580",
+      "categoria": "Normal",
+      "min_coord": 37.38,
+      "max_coord": 252.28,
+      "media_coord": 136.1076666666667,
+      "desviacion_std": 67.11518097933498,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 577,
+      "COVID_ID": "Normal-6560",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 266.3,
+      "media_coord": 147.943,
+      "desviacion_std": 75.15170364669054,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 677,
+      "COVID_ID": "Viral Pneumonia-100",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 284.98,
+      "media_coord": 152.30266666666668,
+      "desviacion_std": 82.86097356147559,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 637,
+      "COVID_ID": "Normal-9112",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 256.95,
+      "media_coord": 142.804,
+      "desviacion_std": 79.59226003408455,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 241,
+      "COVID_ID": "Viral Pneumonia-1260",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 18.69,
+      "max_coord": 275.64,
+      "media_coord": 146.38500000000002,
+      "desviacion_std": 85.40070997948438,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 366,
+      "COVID_ID": "COVID-526",
+      "categoria": "COVID",
+      "min_coord": 56.06,
+      "max_coord": 266.3,
+      "media_coord": 160.4006666666667,
+      "desviacion_std": 68.01634460105078,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 531,
+      "COVID_ID": "Normal-4284",
+      "categoria": "Normal",
+      "min_coord": 32.7,
+      "max_coord": 256.95,
+      "media_coord": 141.40099999999998,
+      "desviacion_std": 73.11506772888882,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 90,
+      "COVID_ID": "Normal-30",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 252.28,
+      "media_coord": 143.4266666666667,
+      "desviacion_std": 74.22486476167464,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 201,
+      "COVID_ID": "Viral Pneumonia-1321",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 32.7,
+      "max_coord": 266.3,
+      "media_coord": 146.5413333333333,
+      "desviacion_std": 78.5328857542424,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 309,
+      "COVID_ID": "Normal-9898",
+      "categoria": "Normal",
+      "min_coord": 37.38,
+      "max_coord": 252.28,
+      "media_coord": 141.87033333333332,
+      "desviacion_std": 70.13437499939351,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 339,
+      "COVID_ID": "Normal-1756",
+      "categoria": "Normal",
+      "min_coord": 79.42,
+      "max_coord": 228.92,
+      "media_coord": 148.25366666666667,
+      "desviacion_std": 45.58315116234164,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 50,
+      "COVID_ID": "COVID-3263",
+      "categoria": "COVID",
+      "min_coord": 9.34,
+      "max_coord": 256.95,
+      "media_coord": 135.48366666666666,
+      "desviacion_std": 80.10556591079605,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 268,
+      "COVID_ID": "Normal-7608",
+      "categoria": "Normal",
+      "min_coord": 9.34,
+      "max_coord": 247.61,
+      "media_coord": 132.36933333333334,
+      "desviacion_std": 74.79165902395503,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 207,
+      "COVID_ID": "COVID-1970",
+      "categoria": "COVID",
+      "min_coord": 28.03,
+      "max_coord": 252.28,
+      "media_coord": 147.32,
+      "desviacion_std": 73.32321169543334,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 658,
+      "COVID_ID": "Normal-9836",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 261.62,
+      "media_coord": 134.86066666666665,
+      "desviacion_std": 70.91084505364621,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 154,
+      "COVID_ID": "Normal-2575",
+      "categoria": "Normal",
+      "min_coord": 37.38,
+      "max_coord": 252.28,
+      "media_coord": 144.82966666666667,
+      "desviacion_std": 71.21111619606091,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 504,
+      "COVID_ID": "Normal-2865",
+      "categoria": "Normal",
+      "min_coord": 14.02,
+      "max_coord": 275.64,
+      "media_coord": 152.30233333333334,
+      "desviacion_std": 75.68470786463773,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 709,
+      "COVID_ID": "Viral Pneumonia-424",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 252.28,
+      "media_coord": 138.59833333333336,
+      "desviacion_std": 70.42309356469809,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 49,
+      "COVID_ID": "COVID-2174",
+      "categoria": "COVID",
+      "min_coord": 28.03,
+      "max_coord": 270.97,
+      "media_coord": 131.43533333333335,
+      "desviacion_std": 72.17261155190535,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 238,
+      "COVID_ID": "Normal-9200",
+      "categoria": "Normal",
+      "min_coord": 37.38,
+      "max_coord": 275.64,
+      "media_coord": 154.01633333333334,
+      "desviacion_std": 75.50065569178118,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 726,
+      "COVID_ID": "Viral Pneumonia-634",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 14.02,
+      "max_coord": 275.64,
+      "media_coord": 143.11533333333333,
+      "desviacion_std": 79.1779612322071,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 787,
+      "COVID_ID": "Viral Pneumonia-1255",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 23.36,
+      "max_coord": 252.28,
+      "media_coord": 142.0256666666667,
+      "desviacion_std": 75.15312553639329,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 445,
+      "COVID_ID": "COVID-3154",
+      "categoria": "COVID",
+      "min_coord": 37.38,
+      "max_coord": 261.62,
+      "media_coord": 142.18033333333332,
+      "desviacion_std": 67.11494878109414,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 589,
+      "COVID_ID": "Normal-7178",
+      "categoria": "Normal",
+      "min_coord": 28.03,
+      "max_coord": 270.97,
+      "media_coord": 145.139,
+      "desviacion_std": 83.96323502382853,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 550,
+      "COVID_ID": "Normal-5079",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 280.31,
+      "media_coord": 157.59800000000004,
+      "desviacion_std": 84.36996394452235,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 345,
+      "COVID_ID": "Normal-1943",
+      "categoria": "Normal",
+      "min_coord": 56.06,
+      "max_coord": 280.31,
+      "media_coord": 158.99933333333334,
+      "desviacion_std": 65.9316859045954,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 415,
+      "COVID_ID": "COVID-902",
+      "categoria": "COVID",
+      "min_coord": 18.69,
+      "max_coord": 275.64,
+      "media_coord": 134.08166666666668,
+      "desviacion_std": 77.54115342119233,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 463,
+      "COVID_ID": "Normal-599",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 289.66,
+      "media_coord": 140.1566666666667,
+      "desviacion_std": 84.24090484372121,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 61,
+      "COVID_ID": "COVID-1733",
+      "categoria": "COVID",
+      "min_coord": 42.05,
+      "max_coord": 247.61,
+      "media_coord": 137.97633333333334,
+      "desviacion_std": 63.414911205663785,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 245,
+      "COVID_ID": "Viral Pneumonia-1092",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 23.36,
+      "max_coord": 261.62,
+      "media_coord": 143.42733333333334,
+      "desviacion_std": 76.95690923858335,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 763,
+      "COVID_ID": "Viral Pneumonia-989",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 4.67,
+      "max_coord": 284.98,
+      "media_coord": 148.877,
+      "desviacion_std": 86.24421024625363,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 358,
+      "COVID_ID": "Normal-2881",
+      "categoria": "Normal",
+      "min_coord": 9.34,
+      "max_coord": 247.61,
+      "media_coord": 121.002,
+      "desviacion_std": 77.08320151628368,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 748,
+      "COVID_ID": "Viral Pneumonia-797",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 18.69,
+      "max_coord": 261.62,
+      "media_coord": 139.845,
+      "desviacion_std": 78.82274679092747,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 487,
+      "COVID_ID": "Normal-1979",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 266.3,
+      "media_coord": 129.87800000000001,
+      "desviacion_std": 74.37286612737202,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 716,
+      "COVID_ID": "Viral Pneumonia-501",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 46.72,
+      "max_coord": 289.66,
+      "media_coord": 158.065,
+      "desviacion_std": 76.3692343704802,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 134,
+      "COVID_ID": "Normal-4178",
+      "categoria": "Normal",
+      "min_coord": 37.38,
+      "max_coord": 228.92,
+      "media_coord": 132.21366666666668,
+      "desviacion_std": 64.52307145423944,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 277,
+      "COVID_ID": "COVID-2025",
+      "categoria": "COVID",
+      "min_coord": 51.39,
+      "max_coord": 256.95,
+      "media_coord": 142.02433333333335,
+      "desviacion_std": 64.3364774542578,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 104,
+      "COVID_ID": "Normal-3583",
+      "categoria": "Normal",
+      "min_coord": 23.36,
+      "max_coord": 270.97,
+      "media_coord": 138.13133333333332,
+      "desviacion_std": 72.65391206412922,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 467,
+      "COVID_ID": "Normal-922",
+      "categoria": "Normal",
+      "min_coord": 32.7,
+      "max_coord": 284.98,
+      "media_coord": 152.7706666666667,
+      "desviacion_std": 84.15444499780679,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 57,
+      "COVID_ID": "COVID-881",
+      "categoria": "COVID",
+      "min_coord": 4.67,
+      "max_coord": 252.28,
+      "media_coord": 131.28000000000003,
+      "desviacion_std": 70.71171468245791,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 781,
+      "COVID_ID": "Viral Pneumonia-1204",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 280.31,
+      "media_coord": 156.19633333333334,
+      "desviacion_std": 77.38688555921833,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 506,
+      "COVID_ID": "Normal-2876",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 275.64,
+      "media_coord": 147.1643333333333,
+      "desviacion_std": 84.26435563880034,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 307,
+      "COVID_ID": "Normal-9875",
+      "categoria": "Normal",
+      "min_coord": 18.69,
+      "max_coord": 284.98,
+      "media_coord": 153.08066666666667,
+      "desviacion_std": 90.31430768648393,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 523,
+      "COVID_ID": "Normal-3776",
+      "categoria": "Normal",
+      "min_coord": 46.72,
+      "max_coord": 256.95,
+      "media_coord": 153.70366666666663,
+      "desviacion_std": 72.8601216250853,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 412,
+      "COVID_ID": "COVID-799",
+      "categoria": "COVID",
+      "min_coord": 14.02,
+      "max_coord": 266.3,
+      "media_coord": 144.36166666666665,
+      "desviacion_std": 83.33928781726473,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 680,
+      "COVID_ID": "Viral Pneumonia-135",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 18.69,
+      "max_coord": 280.31,
+      "media_coord": 147.00833333333333,
+      "desviacion_std": 82.20088982013651,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 712,
+      "COVID_ID": "Viral Pneumonia-444",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 18.69,
+      "max_coord": 275.64,
+      "media_coord": 149.03333333333333,
+      "desviacion_std": 81.17263082810337,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 697,
+      "COVID_ID": "Viral Pneumonia-263",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 23.36,
+      "max_coord": 284.98,
+      "media_coord": 149.9676666666667,
+      "desviacion_std": 82.56823718126859,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 285,
+      "COVID_ID": "Viral Pneumonia-101",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 261.62,
+      "media_coord": 143.73933333333332,
+      "desviacion_std": 74.43463637910035,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 35,
+      "COVID_ID": "COVID-1907",
+      "categoria": "COVID",
+      "min_coord": 4.67,
+      "max_coord": 214.91,
+      "media_coord": 110.72200000000001,
+      "desviacion_std": 67.89558043545004,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 442,
+      "COVID_ID": "COVID-3087",
+      "categoria": "COVID",
+      "min_coord": 28.03,
+      "max_coord": 233.59,
+      "media_coord": 130.03333333333333,
+      "desviacion_std": 63.43094740652145,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 223,
+      "COVID_ID": "Viral Pneumonia-217",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 23.36,
+      "max_coord": 275.64,
+      "media_coord": 148.41033333333334,
+      "desviacion_std": 85.98156474823865,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 673,
+      "COVID_ID": "Viral Pneumonia-73",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 14.02,
+      "max_coord": 270.97,
+      "media_coord": 141.71433333333334,
+      "desviacion_std": 82.42782752943465,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 41,
+      "COVID_ID": "COVID-2948",
+      "categoria": "COVID",
+      "min_coord": 37.38,
+      "max_coord": 284.98,
+      "media_coord": 147.47600000000003,
+      "desviacion_std": 71.77654341078288,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 359,
+      "COVID_ID": "Normal-3351",
+      "categoria": "Normal",
+      "min_coord": 88.77,
+      "max_coord": 261.62,
+      "media_coord": 174.88300000000007,
+      "desviacion_std": 48.12476917000919,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 732,
+      "COVID_ID": "Viral Pneumonia-679",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 37.38,
+      "max_coord": 284.98,
+      "media_coord": 152.6146666666667,
+      "desviacion_std": 76.35107847888521,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 714,
+      "COVID_ID": "Viral Pneumonia-456",
+      "categoria": "Viral Pneumonia",
+      "min_coord": 28.03,
+      "max_coord": 256.95,
+      "media_coord": 135.9513333333333,
+      "desviacion_std": 71.93623619721998,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 592,
+      "COVID_ID": "Normal-7332",
+      "categoria": "Normal",
+      "min_coord": 51.39,
+      "max_coord": 270.97,
+      "media_coord": 155.8853333333333,
+      "desviacion_std": 69.15370318998751,
+      "coordenadas_fuera_rango": 0
+    },
+    {
+      "indice": 108,
+      "COVID_ID": "Normal-4185",
+      "categoria": "Normal",
+      "min_coord": 37.38,
+      "max_coord": 284.98,
+      "media_coord": 146.38633333333334,
+      "desviacion_std": 73.25854669062322,
+      "coordenadas_fuera_rango": 0
+    }
+  ]
+}

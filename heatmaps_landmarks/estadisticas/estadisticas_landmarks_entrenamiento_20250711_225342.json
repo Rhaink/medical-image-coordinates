@@ -1,0 +1,742 @@
+{
+  "informacion_general": {
+    "dataset": "entrenamiento",
+    "total_landmarks": 15,
+    "tamaño_cuadricula": 299,
+    "fecha_analisis": "2025-07-11T22:53:42.548622",
+    "configuracion": {
+      "sigma_gaussian": 1.0,
+      "colormap": "viridis"
+    }
+  },
+  "estadisticas_landmarks": {
+    "landmark_01": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 149.71156249999999,
+        "y_media": 38.86475,
+        "x_std": 13.14391211487637,
+        "y_std": 18.282285063005663,
+        "x_min": 88.77,
+        "x_max": 200.89,
+        "y_min": 4.67,
+        "y_max": 140.16,
+        "distancia_centro": 110.63545228024292,
+        "dispersion_total": 22.516757599809832
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 148.9450625,
+          "y_media": 37.930125,
+          "x_std": 18.850643722326666,
+          "y_std": 18.7918868460401,
+          "distancia_centro": 111.57125509352545,
+          "dispersion": 26.617321051910327
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 150.69631097560975,
+          "y_media": 41.577439024390245,
+          "x_std": 10.687242028876392,
+          "y_std": 18.64019773205704,
+          "distancia_centro": 107.92919126670304,
+          "dispersion": 21.486603120874328
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 148.3934210526316,
+          "y_media": 33.99486842105264,
+          "x_std": 10.121977268434991,
+          "y_std": 15.662802229068,
+          "distancia_centro": 115.51043216106804,
+          "dispersion": 18.648801502767203
+        }
+      }
+    },
+    "landmark_02": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 148.92337500000002,
+        "y_media": 235.812640625,
+        "x_std": 11.722100848264146,
+        "y_std": 29.509029307711053,
+        "x_min": 98.11,
+        "x_max": 210.23,
+        "y_min": 126.14,
+        "y_max": 294.33,
+        "distancia_centro": 86.3145667199403,
+        "dispersion_total": 31.752015038107814
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 152.274,
+          "y_media": 227.87075,
+          "x_std": 16.453771041922273,
+          "y_std": 29.634480351231065,
+          "distancia_centro": 78.4198286886837,
+          "dispersion": 33.895855309867905
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 148.57405487804877,
+          "y_media": 230.83030487804876,
+          "x_std": 10.050642848480893,
+          "y_std": 27.428025533442014,
+          "distancia_centro": 81.3355756475924,
+          "dispersion": 29.21150469131755
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 146.15019736842106,
+          "y_media": 254.92388157894743,
+          "x_std": 7.472022947952577,
+          "y_std": 25.168508206250163,
+          "distancia_centro": 105.47708748748452,
+          "dispersion": 26.25423646314651
+        }
+      }
+    },
+    "landmark_03": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 63.041125,
+        "y_media": 87.283734375,
+        "x_std": 16.757437769819553,
+        "y_std": 17.11631660209618,
+        "x_min": 4.67,
+        "x_max": 126.14,
+        "y_min": 23.36,
+        "y_max": 158.84,
+        "distancia_centro": 106.51760781479362,
+        "dispersion_total": 23.953705655546663
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 63.91737500000001,
+          "y_media": 86.69262499999999,
+          "x_std": 23.588087578465853,
+          "y_std": 20.072460003930136,
+          "distancia_centro": 106.1562624449507,
+          "dispersion": 30.972593146502117
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 62.64286585365854,
+          "y_media": 87.39826219512194,
+          "x_std": 14.708922493956663,
+          "y_std": 16.138135764190636,
+          "distancia_centro": 106.77447068705784,
+          "dispersion": 21.835563351484048
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 62.978157894736846,
+          "y_media": 87.65881578947368,
+          "x_std": 11.342971532433447,
+          "y_std": 15.713177546175865,
+          "distancia_centro": 106.3501820677724,
+          "dispersion": 19.379549834380597
+        }
+      }
+    },
+    "landmark_04": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 236.367625,
+        "y_media": 88.108578125,
+        "x_std": 16.969928558979706,
+        "y_std": 16.49410910967978,
+        "x_min": 154.17,
+        "x_max": 284.98,
+        "y_min": 42.05,
+        "y_max": 168.19,
+        "distancia_centro": 106.37147621883818,
+        "dispersion_total": 23.66503983979103
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 235.871,
+          "y_media": 83.45125,
+          "x_std": 21.016599487072124,
+          "y_std": 17.145712027719934,
+          "distancia_centro": 108.73080068482206,
+          "dispersion": 27.12329063623181
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 238.3227134146341,
+          "y_media": 89.53478658536585,
+          "x_std": 15.89726902503868,
+          "y_std": 16.70407168716849,
+          "distancia_centro": 107.16949770434142,
+          "dispersion": 23.0596871918185
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 232.6715131578948,
+          "y_media": 89.93342105263159,
+          "x_std": 13.419282559841998,
+          "y_std": 14.2614562953725,
+          "distancia_centro": 102.30189601599248,
+          "dispersion": 19.58229506686332
+        }
+      }
+    },
+    "landmark_05": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 50.252296875,
+        "y_media": 136.805359375,
+        "x_std": 16.44031121985272,
+        "y_std": 19.020665723321823,
+        "x_min": 0.0,
+        "x_max": 112.12,
+        "y_min": 56.06,
+        "y_max": 186.88,
+        "distancia_centro": 100.05628654005723,
+        "dispersion_total": 25.140993567557448
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 51.0698125,
+          "y_media": 134.549625,
+          "x_std": 22.899746763661902,
+          "y_std": 22.294956629457143,
+          "distancia_centro": 99.55910568062463,
+          "dispersion": 31.960342503628127
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 50.86393292682928,
+          "y_media": 134.9855487804878,
+          "x_std": 14.73422571423216,
+          "y_std": 17.13747184278517,
+          "distancia_centro": 99.69825987381441,
+          "dispersion": 22.600671418349386
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 48.071907894736846,
+          "y_media": 143.10677631578946,
+          "x_std": 10.549912430015251,
+          "y_std": 17.723236925230676,
+          "distancia_centro": 101.62938146613948,
+          "dispersion": 20.625561310879526
+        }
+      }
+    },
+    "landmark_06": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 248.41217187500007,
+        "y_media": 137.579203125,
+        "x_std": 16.418664421222243,
+        "y_std": 18.53794684616504,
+        "x_min": 168.19,
+        "x_max": 294.33,
+        "y_min": 79.42,
+        "y_max": 196.22,
+        "distancia_centro": 99.62792351125545,
+        "dispersion_total": 24.76344109060672
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 248.42693749999998,
+          "y_media": 130.95825,
+          "x_std": 20.286812095449935,
+          "y_std": 19.686167654916993,
+          "distancia_centro": 100.64956759068268,
+          "dispersion": 28.268355840649697
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 248.93374999999997,
+          "y_media": 137.1077743902439,
+          "x_std": 15.653498760261236,
+          "y_std": 17.910438814341514,
+          "distancia_centro": 100.20298346169933,
+          "dispersion": 23.78688382196733
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 247.27111842105268,
+          "y_media": 145.56592105263155,
+          "x_std": 13.083736869092894,
+          "y_std": 15.375269460850673,
+          "distancia_centro": 97.85023543388965,
+          "dispersion": 20.188686967047364
+        }
+      }
+    },
+    "landmark_07": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 42.91621875,
+        "y_media": 185.824171875,
+        "x_std": 17.094522014073643,
+        "y_std": 23.98706607088931,
+        "x_min": 0.0,
+        "x_max": 116.8,
+        "y_min": 84.09,
+        "y_max": 238.27,
+        "distancia_centro": 112.6034985600021,
+        "dispersion_total": 29.455084817037235
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 45.14243750000001,
+          "y_media": 181.969625,
+          "x_std": 23.141479661715536,
+          "y_std": 26.30244548724272,
+          "distancia_centro": 109.29216531198396,
+          "dispersion": 35.0335085245964
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 43.671189024390245,
+          "y_media": 182.08966463414635,
+          "x_std": 15.813990432629398,
+          "y_std": 21.58840733565051,
+          "distancia_centro": 110.73311823243067,
+          "dispersion": 26.760822571312392
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 38.943684210526314,
+          "y_media": 197.94026315789472,
+          "x_std": 10.238084774392396,
+          "y_std": 22.27506169722002,
+          "distancia_centro": 120.70276739059433,
+          "dispersion": 24.515235129661797
+        }
+      }
+    },
+    "landmark_08": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 255.244046875,
+        "y_media": 186.75856249999998,
+        "x_std": 16.724947440995226,
+        "y_std": 23.70537927736221,
+        "x_min": 172.86,
+        "x_max": 294.33,
+        "y_min": 107.45,
+        "y_max": 242.94,
+        "distancia_centro": 112.11602886772526,
+        "dispersion_total": 29.01153001114637
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 255.17112500000002,
+          "y_media": 178.2324375,
+          "x_std": 20.423206499822083,
+          "y_std": 24.622796900100397,
+          "distancia_centro": 109.50771490382326,
+          "dispersion": 31.990459373350184
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 255.07219512195124,
+          "y_media": 184.42560975609757,
+          "x_std": 16.4099937964934,
+          "y_std": 22.324928582496366,
+          "distancia_centro": 111.19931024832196,
+          "dispersion": 27.70722527815651
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 255.69164473684208,
+          "y_media": 200.76769736842107,
+          "x_std": 12.544310067038309,
+          "y_std": 19.179966538250635,
+          "distancia_centro": 117.91964300054376,
+          "dispersion": 22.917915076778094
+        }
+      }
+    },
+    "landmark_09": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 149.30306249999998,
+        "y_media": 87.97729687500001,
+        "x_std": 11.446207668747487,
+        "y_std": 15.682579857101485,
+        "x_min": 93.44,
+        "x_max": 196.22,
+        "y_min": 37.38,
+        "y_max": 163.52,
+        "distancia_centro": 61.52301832798672,
+        "dispersion_total": 19.415431516462853
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 149.6169375,
+          "y_media": 85.3496875,
+          "x_std": 16.714234277887034,
+          "y_std": 17.04342308714255,
+          "distancia_centro": 64.15041908067758,
+          "dispersion": 23.871403352619165
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 149.92731707317074,
+          "y_media": 88.76557926829268,
+          "x_std": 9.669799516016472,
+          "y_std": 15.601871281013901,
+          "distancia_centro": 60.73592397829363,
+          "dispersion": 18.35547357463922
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 147.6255921052632,
+          "y_media": 89.04217105263157,
+          "x_std": 7.214105675830021,
+          "y_std": 13.956015158429715,
+          "distancia_centro": 60.486878626567524,
+          "dispersion": 15.710304892151612
+        }
+      }
+    },
+    "landmark_10": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 149.19365625,
+        "y_media": 137.309125,
+        "x_std": 10.590995264579055,
+        "y_std": 17.29484755778076,
+        "x_min": 93.44,
+        "x_max": 191.55,
+        "y_min": 65.41,
+        "y_max": 191.55,
+        "distancia_centro": 12.194723439208827,
+        "dispersion_total": 20.2800624442138
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 150.5225,
+          "y_media": 133.0605,
+          "x_std": 15.527287915151184,
+          "y_std": 18.614877309560757,
+          "distancia_centro": 16.471267908087718,
+          "dispersion": 24.240675057638143
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 149.52844512195122,
+          "y_media": 136.11091463414635,
+          "x_std": 9.112397730533246,
+          "y_std": 16.525918439257932,
+          "distancia_centro": 13.389115581661063,
+          "dispersion": 18.871718858133534
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 147.07243421052632,
+          "y_media": 144.3669736842105,
+          "x_std": 5.72036781076257,
+          "y_std": 15.278106413369914,
+          "distancia_centro": 5.678118950921195,
+          "dispersion": 16.31389418467165
+        }
+      }
+    },
+    "landmark_11": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 148.9455,
+        "y_media": 186.40096875,
+        "x_std": 10.661245283736793,
+        "y_std": 22.59969481263018,
+        "x_min": 93.44,
+        "x_max": 200.89,
+        "y_min": 93.44,
+        "y_max": 238.27,
+        "distancia_centro": 36.90513466901966,
+        "dispersion_total": 24.98816433081917
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 151.223375,
+          "y_media": 180.334875,
+          "x_std": 15.305513013596602,
+          "y_std": 23.54104314775314,
+          "distancia_centro": 30.88299754972387,
+          "dispersion": 28.079163824689473
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 148.84478658536585,
+          "y_media": 183.2720426829268,
+          "x_std": 9.291864390793336,
+          "y_std": 21.004108521688345,
+          "distancia_centro": 33.77839800221655,
+          "dispersion": 22.967614561546313
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 146.76506578947368,
+          "y_media": 199.53822368421052,
+          "x_std": 5.953270993494881,
+          "y_std": 19.562985427035066,
+          "distancia_centro": 50.112909460607,
+          "dispersion": 20.448761193294178
+        }
+      }
+    },
+    "landmark_12": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 103.12370312500002,
+        "y_media": 38.4195625,
+        "x_std": 16.849860854562426,
+        "y_std": 18.86085838936271,
+        "x_min": 32.7,
+        "x_max": 168.19,
+        "y_min": 0.0,
+        "y_max": 135.48,
+        "distancia_centro": 120.37285618871698,
+        "dispersion_total": 25.291298701365832
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 104.94168750000001,
+          "y_media": 38.484750000000005,
+          "x_std": 22.844953141281422,
+          "y_std": 20.0706778021446,
+          "distancia_centro": 119.62369725689871,
+          "dispersion": 30.409274760586513
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 105.01643292682927,
+          "y_media": 40.851310975609756,
+          "x_std": 13.624544983062782,
+          "y_std": 18.865272726616904,
+          "distancia_centro": 117.40240783847636,
+          "dispersion": 23.270727127555272
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 97.12572368421053,
+          "y_media": 33.10348684210526,
+          "x_std": 14.083042649433214,
+          "y_std": 16.271690150132905,
+          "distancia_centro": 127.63703653296965,
+          "dispersion": 21.51975814473032
+        }
+      }
+    },
+    "landmark_13": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 198.00745312499998,
+        "y_media": 38.901359375000006,
+        "x_std": 17.239662090139056,
+        "y_std": 18.508392434132404,
+        "x_min": 121.47,
+        "x_max": 261.62,
+        "y_min": 0.0,
+        "y_max": 140.16,
+        "distancia_centro": 120.76850713978364,
+        "dispersion_total": 25.293606691771483
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 194.4961875,
+          "y_media": 37.142125,
+          "x_std": 21.616046900158313,
+          "y_std": 18.546793940850666,
+          "distancia_centro": 121.0328425017391,
+          "dispersion": 28.482223387127252
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 199.06768292682926,
+          "y_media": 41.876615853658535,
+          "x_std": 14.974589517463833,
+          "y_std": 18.958823653914724,
+          "distancia_centro": 118.4894425923494,
+          "dispersion": 24.159373451246086
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 199.41565789473685,
+          "y_media": 34.33289473684211,
+          "x_std": 16.071042267605872,
+          "y_std": 16.168319153581724,
+          "distancia_centro": 125.51906244774017,
+          "dispersion": 22.79677485565123
+        }
+      }
+    },
+    "landmark_14": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 36.52153125,
+        "y_media": 235.199375,
+        "x_std": 17.437146837793545,
+        "y_std": 30.503892619170347,
+        "x_min": 0.0,
+        "x_max": 121.47,
+        "y_min": 112.12,
+        "y_max": 294.33,
+        "distancia_centro": 141.8045037242659,
+        "dispersion_total": 35.13604352747544
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 39.419125,
+          "y_media": 229.85600000000005,
+          "x_std": 22.96867656144722,
+          "y_std": 32.01898349417108,
+          "distancia_centro": 136.2897126593406,
+          "dispersion": 39.4052713096151
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 37.03387195121952,
+          "y_media": 229.44856707317075,
+          "x_std": 16.457509311918866,
+          "y_std": 27.702406518389978,
+          "distancia_centro": 137.9869679909591,
+          "dispersion": 32.222242933446324
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 32.3658552631579,
+          "y_media": 253.23361842105265,
+          "x_std": 10.665943307412897,
+          "y_std": 27.495371226457614,
+          "distancia_centro": 156.46428171936248,
+          "dispersion": 29.49165620167269
+        }
+      }
+    },
+    "landmark_15": {
+      "total_puntos": 640,
+      "estadisticas_globales": {
+        "x_media": 260.81407812500004,
+        "y_media": 236.32359375000004,
+        "x_std": 17.4020659538644,
+        "y_std": 30.283510822062244,
+        "x_min": 172.86,
+        "x_max": 294.33,
+        "y_min": 135.48,
+        "y_max": 294.33,
+        "distancia_centro": 141.1706783311735,
+        "dispersion_total": 34.92739508140576
+      },
+      "estadisticas_por_categoria": {
+        "COVID": {
+          "count": 160,
+          "x_media": 261.157625,
+          "y_media": 226.001875,
+          "x_std": 21.057470215089353,
+          "y_std": 30.68781751745104,
+          "distancia_centro": 135.35125451637398,
+          "dispersion": 37.21772690323457
+        },
+        "Normal": {
+          "count": 328,
+          "x_media": 260.11448170731705,
+          "y_media": 232.04097560975606,
+          "x_std": 17.380545483866108,
+          "y_std": 28.282674180570044,
+          "distancia_centro": 138.01657950401727,
+          "dispersion": 33.196280215123835
+        },
+        "Viral Pneumonia": {
+          "count": 152,
+          "x_media": 261.96210526315787,
+          "y_media": 256.43,
+          "x_std": 12.408240928362414,
+          "y_std": 24.249067643498122,
+          "distancia_centro": 155.18295660355747,
+          "dispersion": 27.23934148461074
+        }
+      }
+    }
+  },
+  "resumen_comparativo": {
+    "landmark_mas_centralizado": "landmark_10",
+    "landmark_mas_disperso": "landmark_14",
+    "landmark_mas_consistente": "landmark_09",
+    "variabilidad_por_categoria": {},
+    "landmarks_ordenados_por_dispersion": [
+      [
+        "landmark_09",
+        19.415431516462853
+      ],
+      [
+        "landmark_10",
+        20.2800624442138
+      ],
+      [
+        "landmark_01",
+        22.516757599809832
+      ],
+      [
+        "landmark_04",
+        23.66503983979103
+      ],
+      [
+        "landmark_03",
+        23.953705655546663
+      ],
+      [
+        "landmark_06",
+        24.76344109060672
+      ],
+      [
+        "landmark_11",
+        24.98816433081917
+      ],
+      [
+        "landmark_05",
+        25.140993567557448
+      ],
+      [
+        "landmark_12",
+        25.291298701365832
+      ],
+      [
+        "landmark_13",
+        25.293606691771483
+      ],
+      [
+        "landmark_08",
+        29.01153001114637
+      ],
+      [
+        "landmark_07",
+        29.455084817037235
+      ],
+      [
+        "landmark_02",
+        31.752015038107814
+      ],
+      [
+        "landmark_15",
+        34.92739508140576
+      ],
+      [
+        "landmark_14",
+        35.13604352747544
+      ]
+    ]
+  }
+}
